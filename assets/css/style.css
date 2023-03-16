@@ -58,6 +58,48 @@
 /*  01 - 01 Template default CSS
 /*----------------------------------------*/
 /* Common Style */
+.mrdips-salsa{
+  display: flex;
+  align-items: center;
+}
+.salsa-mobile{
+  visibility: hidden;
+}
+.mobile{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width:991.5px) {
+  .salsa-web{
+    display: none;
+  }
+  .salsa-mobile{
+    visibility: visible;
+   }
+   .mrdips{
+    height: 80px;
+    width: 130px !important;
+  } 
+  .mrdips-salsa{
+    justify-content: space-between;
+  }
+  
+}
+@media screen and (max-width:500px) {
+  .mrdips{
+    height: 60px;
+    width: 90px !important;
+  } 
+  .mrdips-salsa{
+    justify-content: space-between;
+  }
+  
+}
+
+
+
+
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
